@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        background-color: theme('colors.yellow');
+        padding: theme('spacing.2');
+        box-shadow: theme('boxShadow.xl');
+        border-radius: theme('borderRadius.lg');
+        font-size: theme('fontSize.xs');
+    }
+    &[data-btn-type='primary'] {
+        background-color: theme('colors.blue.900');
+        @apply hover:bg-blue-500 hover:border-blue-200;
+        color: theme('colors.white');
+        border-radius: theme('borderRadius.lg');
+        
+    }
+
+    &[data-btn-type='outline'] {
+        @apply  border hover:border-gray-dark bg-none hover:text-gray-dark;
+        background-color: transparent;
+        
+    }
+}
