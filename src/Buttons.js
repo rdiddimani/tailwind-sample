@@ -28,6 +28,7 @@ const Login = () => {
         <div className='flex'>
              <button class='button'>Default</button>
             <button class='button' data-btn-type="primary">Primary</button>
+            <button class='button' data-btn-type="secondary">Secondary</button>
             <button class='button' data-btn-type="success">Success</button>
             <button class='button' data-btn-type="danger">Danger</button>
         </div>

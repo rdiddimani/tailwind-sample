@@ -3,76 +3,92 @@
 @tailwind utilities;
 
 @layer base {
-    h1 {
-      @apply text-2xl;
-    }
-    h2 {
-      @apply text-xl;
-    }
+  h1 {
+    @apply text-2xl;
   }
-  
+
+  h2 {
+    @apply text-xl;
+  }
+}
+
 @layer components {
-    .button {
-        @apply  bg-gray-300 text-white px-4 py-2 transition-all rounded-sm shadow-xl text-sm focus:outline-1 border;
-        @apply hover:bg-gray-700 hover:text-white;
-        
-        // padding: theme('spacing.2');
-        // box-shadow: theme('boxShadow.xl');
-        // border-radius: theme('borderRadius.sm');
-        // font-size: theme('fontSize.xs');
-        & + & {
-            @apply ml-4;
-        }
-        &[data-btn-type='primary'] {
-            @apply text-white bg-blue-900;
-            @apply hover:bg-blue-800;
-        }
-        &[data-btn-type='success'] {
-          @apply text-white bg-success-400;
-          @apply hover:bg-success-300;
-      }
-      &[data-btn-type='danger'] {
-        @apply text-white bg-danger-300;
-        @apply hover:bg-danger-200;
+  .button {
+    @apply bg-gray-300 text-white px-4 py-2 transition-all rounded-sm shadow-xl text-sm focus:outline-1 border;
+    @apply hover:bg-gray-700 hover:text-white;
+
+    // padding: theme('spacing.2');
+    // box-shadow: theme('boxShadow.xl');
+    // border-radius: theme('borderRadius.sm');
+    // font-size: theme('fontSize.xs');
+    &+& {
+      @apply ml-4;
     }
 
-        &[data-btn-type*='outline'] {
-            background-color: transparent;
-            @apply border border-t-gray-300 text-gray-800;
-            @apply hover:border-gray-900 hover:text-gray-900;
-        }
-        &[data-btn-type='outline-danger'] {
-          @apply  border-danger-200 text-danger-200;
-          @apply  hover:border-danger-300 hover:text-danger-300;
-        }
-        &[data-btn-type='outline-success'] {
-          @apply  border-success-300 text-success-300;
-          @apply  hover:border-success-200 hover:text-success-200;
-        }
-        &[data-btn-type='outline-warning'] {
-          @apply  border-warning-300 text-warning-300;
-          @apply  hover:border-warning-200 hover:text-warning-200;
-        }
-        &[data-btn-type*='link'] {
-          @apply shadow-none underline border-0 underline-offset-4 text-blue-base;
-          background-color: transparent;
-          @apply  hover:text-blue-600 ;
-        }
-        &[data-btn-type*='link-danger'] {
-          @apply text-danger-300;
-          @apply hover:text-danger-200;
-        }
-        &[data-btn-type*='link-success'] {
-          @apply text-success-300;
-          @apply hover:text-success-200;
-        }
-        &[data-btn-type*='link-warning'] {
-          @apply text-warning-300;
-          @apply hover:text-warning-200;
-        }
-        
+    &[data-btn-type='primary'] {
+      @apply text-white bg-blue-900;
+      @apply hover:bg-blue-800;
     }
-    // .button end 
-   
+    &[data-btn-type='secondary'] {
+      @apply text-white bg-secondary-100;
+      @apply hover:bg-secondary-200;
+    }
+
+    &[data-btn-type='success'] {
+      @apply text-white bg-success-400;
+      @apply hover:bg-success-300;
+    }
+
+    &[data-btn-type='danger'] {
+      @apply text-white bg-danger-300;
+      @apply hover:bg-danger-200;
+    }
+
+    &[data-btn-type*='outline'] {
+      background-color: transparent;
+      @apply border border-t-gray-300 text-gray-800;
+      @apply hover:border-gray-900 hover:text-gray-900;
+    }
+
+    &[data-btn-type='outline-danger'] {
+      @apply border-danger-200 text-danger-200;
+      @apply hover:border-danger-300 hover:text-danger-300;
+    }
+
+    &[data-btn-type='outline-success'] {
+      @apply border-success-300 text-success-300;
+      @apply hover:border-success-200 hover:text-success-200;
+    }
+
+    &[data-btn-type='outline-warning'] {
+      @apply border-warning-300 text-warning-300;
+      @apply hover:border-warning-200 hover:text-warning-200;
+    }
+
+    &[data-btn-type*='link'] {
+      @apply shadow-none underline border-0 underline-offset-4 text-blue-base;
+      background-color: transparent;
+      @apply hover:text-blue-600;
+    }
+
+    &[data-btn-type*='link-danger'] {
+      @apply text-danger-300;
+      @apply hover:text-danger-200;
+    }
+
+    &[data-btn-type*='link-success'] {
+      @apply text-success-300;
+      @apply hover:text-success-200;
+    }
+
+    &[data-btn-type*='link-warning'] {
+      @apply text-warning-300;
+      @apply hover:text-warning-200;
+    }
+
+  }
+
+  // .button end 
+
 
 }

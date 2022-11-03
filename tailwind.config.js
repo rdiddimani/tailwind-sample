@@ -49,6 +49,11 @@ module.exports = {
         '500': '#100A27',
       },
       'white': '#fff',
+
+      'secondary': {
+        '100':'#348EA3',
+        '200':'#007F9C',
+      },
       'blue': {
         '100': '#d0ebff',
         '200': '#a5d8ff',
