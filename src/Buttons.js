@@ -46,6 +46,14 @@ const Login = () => {
             <button class='button' data-btn-type="link-success">Link Success</button>
             <button class='button' data-btn-type="link-warning">Link Warning</button>
         </div>
+
+        <h1 className='mt-5 mb-2'>Rounded  </h1>
+        <div className='flex items-center'>
+        <button class='button rounded-full aspect-square' data-btn-type="outline">+</button>
+            <button class='button rounded-full aspect-square' data-btn-type="outline-danger">+</button>
+            <button class='button rounded-full aspect-square' data-btn-type="success">Success</button>
+            <button class='button rounded-full aspect-square' data-btn-type="danger">Danger</button>
+        </div>
     </section>
     )
 }
